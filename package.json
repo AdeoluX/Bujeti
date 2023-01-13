@@ -1,0 +1,37 @@
+{
+  "name": "checklistapis-copy",
+  "version": "1.0.0",
+  "description": "handles authentication and user details",
+  "main": "start.js",
+  "scripts": {
+    "dev": "nodemon start.js",
+    "seed": "cross-env NODE_ENV=test node src/seed/all.js",
+    "only_test": "cross-env NODE_ENV=test jest --forceExit",
+    "start": "node start.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "author": "praytech.io",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/node": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/register": "^7.18.9",
+    "axios": "^1.2.2",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http-status": "^1.5.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.1",
+    "supertest": "^6.2.4"
+  }
+}
