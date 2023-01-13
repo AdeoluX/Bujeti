@@ -10,8 +10,10 @@ Microservice template
 
 - run `npm i`
 - run `npm start`
+- runs on `PORT: 5115`
 
 ## End Points
+- base_url is `http://localhost:5115`
 
 - endpoint to get all urban area `GET` `${base_url}/api/v1/urban-areas`
 
